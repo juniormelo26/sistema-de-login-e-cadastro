@@ -1,3 +1,3 @@
-# Sistema de Login - Cadastro com validação simples
+# Sistema de Login com Banco Mysql - Cadastro de cliente com validação simples
 
 ## Bootstrap, PHP, Mysql, javaScript

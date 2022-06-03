@@ -1,4 +1,5 @@
 <?php
+include('config/conexao.php'); //INCLUI A CONEXÃO COM BANCO DE DADOS
 session_start();
 $token = $_SESSION['usuarioToken'];
 $inserir_token = ("UPDATE usuarios SET token='1' WHERE token='$token'");

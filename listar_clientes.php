@@ -29,8 +29,7 @@ if (isset($_SESSION['success'])) {
         <div class="col-md-6 bg-warning justify-content-between p-3">
             <div class="form-label-group">
 
-                <input type="text" name="pesquisa_cliente" id="pesquisa_cliente" class="form-control" 
-                placeholder="PESQUISAR CLIENTES POR NOME - CPF - RG - NASCIMENTO" required autofocus>
+                <input type="text" name="pesquisa_cliente" id="pesquisa_cliente" class="form-control" placeholder="PESQUISAR CLIENTES POR NOME - CPF - RG - NASCIMENTO" required autofocus>
 
             </div>
         </div>
@@ -100,67 +99,19 @@ if (isset($_SESSION['success'])) {
                 <td><?php echo $responsavel ?></td>
                 <td class="text text-center">
 
-                    <a href="#" data-toggle="modal" 
-                    data-backdrop="static" 
-                    data-keyboard="false" 
-                    data-target="#visulaizarCliente" 
-                    data-whatever="<?php echo $linha['id_cliente']; ?>" 
-                    data-whatevernome="<?php echo ucwords(strtolower($linha['nome'])); ?>" 
-                    data-whateveremail="<?php echo $linha['email']; ?>" 
-                    data-whatevertelefone="<?php echo $linha['telefone']; ?>" 
-                    data-whateverrua="<?php echo ucwords(strtolower($linha['rua'])); ?>" 
-                    data-whatevernumero="<?php echo $linha['numero']; ?>" 
-                    data-whateverbairro="<?php echo $linha['bairro']; ?>" 
-                    data-whatevercomplemento="<?php echo $linha['complemento']; ?>" 
-                    data-whatevercep="<?php echo $linha['cep']; ?>" 
-                    data-whatevercidade="<?php echo $linha['cidade']; ?>" 
-                    data-whateveruf="<?php echo $linha['uf']; ?>" 
-                    data-whatevertelefone="<?php echo $linha['telefone']; ?>" 
-                    data-whatevercelular="<?php echo $linha['celular']; ?>" 
-                    data-whatevercpf="<?php echo $linha['cpf']; ?>" 
-                    data-whateverrg="<?php echo $linha['rg']; ?>" 
-                    data-whatevernascimento="<?php echo $nascimento; ?>" 
-                    data-whateveroperador="<?php echo $linha['criado_por']; ?>" 
-                    data-whateversituacao="<?php echo $situacao; ?>" 
-                    data-whateverdata-cadastro="<?php echo $data_cadastro; ?>"
-                    data-whateveralterado_por="<?php echo $alterado_por; ?>"
-                    data-whateverultima_alteracao="<?php echo $ultima_alteracao; ?>">
+                    <a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#visulaizarCliente" data-whatever="<?php echo $linha['id_cliente']; ?>" data-whatevernome="<?php echo ucwords(strtolower($linha['nome'])); ?>" data-whateveremail="<?php echo $linha['email']; ?>" data-whatevertelefone="<?php echo $linha['telefone']; ?>" data-whateverrua="<?php echo ucwords(strtolower($linha['rua'])); ?>" data-whatevernumero="<?php echo $linha['numero']; ?>" data-whateverbairro="<?php echo $linha['bairro']; ?>" data-whatevercomplemento="<?php echo $linha['complemento']; ?>" data-whatevercep="<?php echo $linha['cep']; ?>" data-whatevercidade="<?php echo $linha['cidade']; ?>" data-whateveruf="<?php echo $linha['uf']; ?>" data-whatevertelefone="<?php echo $linha['telefone']; ?>" data-whatevercelular="<?php echo $linha['celular']; ?>" data-whatevercpf="<?php echo $linha['cpf']; ?>" data-whateverrg="<?php echo $linha['rg']; ?>" data-whatevernascimento="<?php echo $nascimento; ?>" data-whateveroperador="<?php echo $linha['criado_por']; ?>" data-whateversituacao="<?php echo $situacao; ?>" data-whateverdata-cadastro="<?php echo $data_cadastro; ?>" data-whateveralterado_por="<?php echo $alterado_por; ?>" data-whateverultima_alteracao="<?php echo $ultima_alteracao; ?>">
 
                         <i class="far fa-eye text text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Visualizar"></i>
                     </a>
                 </td>
 
                 <td class="text text-center">
-                    <a href="#" data-toggle="modal" 
-                    data-backdrop="static" 
-                    data-keyboard="false" 
-                    data-target="#editarCliente" 
-                    data-whatever="<?php echo $linha['id_cliente']; ?>" 
-                    data-whatevernome="<?php echo ucwords(strtolower($linha['nome'])); ?>" 
-                    data-whateveremail="<?php echo $linha['email']; ?>" 
-                    data-whatevertelefone="<?php echo $linha['telefone']; ?>" 
-                    data-whateverrua="<?php echo ucwords(strtolower($linha['rua'])); ?>" 
-                    data-whatevernumero="<?php echo $linha['numero']; ?>" 
-                    data-whateverbairro="<?php echo $linha['bairro']; ?>" 
-                    data-whatevercomplemento="<?php echo $linha['complemento']; ?>" 
-                    data-whatevercep="<?php echo $linha['cep']; ?>" 
-                    data-whatevercidade="<?php echo $linha['cidade']; ?>" 
-                    data-whateveruf="<?php echo $linha['uf']; ?>" 
-                    data-whatevertelefone="<?php echo $linha['telefone']; ?>" 
-                    data-whatevercelular="<?php echo $linha['celular']; ?>" 
-                    data-whatevercpf="<?php echo $linha['cpf']; ?>" 
-                    data-whateverrg="<?php echo $linha['rg']; ?>" 
-                    data-whatevernascimento="<?php echo $nascimento; ?>" 
-                    data-whateveroperador="<?php echo $linha['criado_por']; ?>" 
-                    data-whateversituacao="<?php echo $linha['situacao']; ?>" 
-                    data-whateverdata-cadastro="<?php echo $data_cadastro ?>"
-                    data-whateveralterado_por="<?php echo $alterado_por; ?>"
-                    data-whateverultima_alteracao="<?php echo $ultima_alteracao; ?>">
+                    <a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#editarCliente" data-whatever="<?php echo $linha['id_cliente']; ?>" data-whatevernome="<?php echo ucwords(strtolower($linha['nome'])); ?>" data-whateveremail="<?php echo $linha['email']; ?>" data-whatevertelefone="<?php echo $linha['telefone']; ?>" data-whateverrua="<?php echo ucwords(strtolower($linha['rua'])); ?>" data-whatevernumero="<?php echo $linha['numero']; ?>" data-whateverbairro="<?php echo $linha['bairro']; ?>" data-whatevercomplemento="<?php echo $linha['complemento']; ?>" data-whatevercep="<?php echo $linha['cep']; ?>" data-whatevercidade="<?php echo $linha['cidade']; ?>" data-whateveruf="<?php echo $linha['uf']; ?>" data-whatevertelefone="<?php echo $linha['telefone']; ?>" data-whatevercelular="<?php echo $linha['celular']; ?>" data-whatevercpf="<?php echo $linha['cpf']; ?>" data-whateverrg="<?php echo $linha['rg']; ?>" data-whatevernascimento="<?php echo $nascimento; ?>" data-whateveroperador="<?php echo $linha['criado_por']; ?>" data-whateversituacao="<?php echo $linha['situacao']; ?>" data-whateverdata-cadastro="<?php echo $data_cadastro ?>" data-whateveralterado_por="<?php echo $alterado_por; ?>" data-whateverultima_alteracao="<?php echo $ultima_alteracao; ?>">
 
                         <i class="far fa-edit text text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar"></i></a>
                 </td>
                 <td class="text text-center">
-                    <a href="processa_excluir_clientes.php?id_cliente=<?php echo $linha['id_cliente']; ?>" onClick="return confirm('Deseja realmente deletar o cliente? <?php echo $linha['cliente']; ?>')">
+                    <a href="processa_excluir_clientes.php?id_cliente=<?php echo $linha['id_cliente']; ?>" onClick="return confirm('Deseja realmente deletar o cliente?')">
                         <i class="far fa-trash-alt text text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir"></i></a>
                 </td>
 
@@ -522,15 +473,15 @@ if (isset($_SESSION['success'])) {
                         </div>
                         <div class="col-md-4 col-sm-12">
 
-                        <label for="recipient-situacao" class="col-form-label">Situação</label>
-                        <select class="form-control form-select-lg mb-5 select2" name="situacao" id="situacao" aria-label=".form-select-lg example">
-                            <option value="Pendente">Pendente</option>
-                            <option value="Ativo">Ativo</option>
-                            <option value="Inativo">Inativo</option>
-                            <option value="Cancelado">Cancelado</option>
+                            <label for="recipient-situacao" class="col-form-label">Situação</label>
+                            <select class="form-control form-select-lg mb-5 select2" name="situacao" id="situacao" aria-label=".form-select-lg example">
+                                <option value="Pendente">Pendente</option>
+                                <option value="Ativo">Ativo</option>
+                                <option value="Inativo">Inativo</option>
+                                <option value="Cancelado">Cancelado</option>
 
-                        </select>
-                       
+                            </select>
+
                         </div>
                     </div>
 
@@ -640,7 +591,7 @@ if (isset($_SESSION['success'])) {
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
                             <label for="recipient-operador" class="col-form-label cli">Cadastrado por</label>
-                            <input type="text" name="operador" id="recipient-operador" maxlength="50" class="form-control" disabled >
+                            <input type="text" name="operador" id="recipient-operador" maxlength="50" class="form-control" disabled>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <label for="recipient-dataCadastro" class="col-form-label">Data do cadastro</label>
@@ -662,13 +613,13 @@ if (isset($_SESSION['success'])) {
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
                             <label for="recipient-alterado_por" class="col-form-label cli">Alterado por</label>
-                            <input type="text" name="alterado_por" id="recipient-alterado_por" maxlength="50" class="form-control" disabled >
+                            <input type="text" name="alterado_por" id="recipient-alterado_por" maxlength="50" class="form-control" disabled>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <label for="recipientultima_alteracao" class="col-form-label">Última Alteração</label>
                             <input type="text" class="form-control" name="ultima_alteracao" id="recipientultima_alteracao" disabled>
                         </div>
-                        
+
                     </div>
             </div>
             <div class="modal-footer">
@@ -746,7 +697,7 @@ if (isset($_SESSION['success'])) {
             </div>
             <div class="modal-body">
                 <form method="POST" action="processa_edit_clientes.php" enctype="multipart/form-data">
-                   
+
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <label for="recipient-name" class="col-form-label">Nome</label>
@@ -797,13 +748,11 @@ if (isset($_SESSION['success'])) {
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <label for="recipient-telefone" class="col-form-label">Telefone</label>
-                            <input type="text" name="telefone" id="recipient-telefone" onkeypress="mask(this, telefone);" 
-                            onblur="mask(this, telefone);" class="form-control -10">
+                            <input type="text" name="telefone" id="recipient-telefone" onkeypress="mask(this, telefone);" onblur="mask(this, telefone);" class="form-control -10">
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <label for="recipient-celular" class="col-form-label">Celular</label>
-                            <input type="text" name="celular" id="recipient-celular" maxlength="50" 
-                            onkeypress="mask(this, celular);" onblur="mask(this, celular);" class="form-control -10">
+                            <input type="text" name="celular" id="recipient-celular" maxlength="50" onkeypress="mask(this, celular);" onblur="mask(this, celular);" class="form-control -10">
                         </div>
                     </div>
 
@@ -818,7 +767,7 @@ if (isset($_SESSION['success'])) {
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <label for="recipient-nascimento" class="col-form-label">Nascimento</label>
-                            <input type="text" name="nascimento" id="recipient-nascimento" class="form-control -10" >
+                            <input type="text" name="nascimento" id="recipient-nascimento" class="form-control -10">
                         </div>
                     </div>
                     <div class="row">
@@ -843,7 +792,7 @@ if (isset($_SESSION['success'])) {
 
                         </div>
                     </div>
-                   
+
 
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
@@ -854,9 +803,9 @@ if (isset($_SESSION['success'])) {
                             <label for="recipient-dataCadastro" class="col-form-label">Última Alteração</label>
                             <input type="text" class="form-control" name="ultima_alteracao" id="recipientultima_alteracao" value="<?php echo date('d/m/Y - H:i:s') ?>" disabled>
                         </div>
-                        
+
                     </div>
-                    
+
 
                     <input type="hidden" name="id" class="form-control" id="id">
             </div>
